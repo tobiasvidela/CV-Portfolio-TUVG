@@ -44,6 +44,10 @@ h1 {
     min-height: 450px;
     text-align: center;
 }
+.hero-inferior-imagen.img-fluid {
+    max-width: 100px;
+    margin: 1.2rem;
+}
 .sub-hero {
     min-height: 350px;
     text-align: center;
@@ -86,10 +90,9 @@ h1 {
 }
 .hero-content p {
     max-width: 1000px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 10px;
 }
-
 
 
 #profile {
@@ -103,4 +106,11 @@ h1 {
     #profile {
         display: none;
     }
+    .hero-inferior-imagen.img-fluid {
+        min-width: 20px;
+    }
 }
+/* 
+@media screen and (min-width: 700px) {
+    
+} */

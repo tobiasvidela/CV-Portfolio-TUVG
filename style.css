@@ -1,3 +1,7 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 /* NavBar */
 
 .navbar {
@@ -5,6 +9,10 @@
     position: sticky;
     top: 0;
 }
+/* .navbar a {
+    font-weight: 400;
+    font-size: large;
+} */
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
@@ -13,12 +21,84 @@
     margin-left: 25px;
     margin-right: 25px;
 }
+/* Estilos Generales */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px 0; */
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Section Hero */
+
+.hero {
+    min-height: 450px;
+    text-align: center;
+}
+.sub-hero {
+    min-height: 350px;
+    text-align: center;
+}
+.final-hero {
+    min-height: 400px;
+    text-align: center;
+}
+.hero-principal {
+    padding: 3rem;
+}
+.hero-principal h1 {
+    font-size: 3.5rem;
+}
+.hero-principal h3 {
+    font-size: 1.5rem;
+    color: #615151;
+    max-width: 915px;
+}
+.hero-principal i {
+    font-size: 7rem;
+    margin: 20px;
+    color: black;
+}
+.hero-content {
+    padding: 2rem;
+}
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+.hero-content h4 {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #7c6666c9;
+}
+.hero-content i {
+    font-size: 3.5rem;
+    margin: 20px;
+    color: #111;
+}
+.hero-content p {
+    max-width: 1000px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
 
 #profile {
     width: 200px;
     height: 200px;
 }
 
+
+/* RESPONSIVE */
 @media screen and (max-width: 767px) {
     #profile {
         display: none;

@@ -1,0 +1,26 @@
+/* NavBar */
+
+.navbar {
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    #profile {
+        display: none;
+    }
+}

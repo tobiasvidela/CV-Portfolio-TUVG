@@ -9,10 +9,6 @@
     position: sticky;
     top: 0;
 }
-/* .navbar a {
-    font-weight: 400;
-    font-size: large;
-} */
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
@@ -32,7 +28,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 100px 0; */
 }
 h1 {
     font-size: 2.5rem;
@@ -164,10 +159,10 @@ h1 {
 }
 .social-contact:hover {
     background-color: black;
-    border: 2px solid rgb(13,110,253);
+    border: 2px solid #dfdfdf;
 }
 .social-contact:hover i {
-    color: white;
+    color: #dfdfdf;
 }
 
 .derechos-de-autor {
@@ -191,6 +186,48 @@ h1 {
     width: 200px;
     height: 200px;
 }
+
+
+/* -- CONTACT -- */
+
+.seccion-contacto {
+    color: #393939;
+    height: 600px;
+    padding: 10px;
+}
+.seccion-contacto-cards {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box {
+    border: 3px solid #393939;
+    border-radius: 7px;
+    margin: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(
+        45deg, #393939 50%,  transparent 50%
+    );
+    background-position: 100%;
+    background-size: 250%;
+    transition: 0.5s background;
+}
+.contact-box:hover {
+    background-position: 0;
+    color: #dfdfdf;
+}
+.contact-box:hover a {
+    color: #dfdfdf;
+}
+.contact {
+    padding: 10px;
+    font-size: 2rem;
+    color: #111;
+    text-decoration: none;
+}
+
 
 
 /* RESPONSIVE */

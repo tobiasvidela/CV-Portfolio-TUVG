@@ -37,12 +37,22 @@ section {
 h1 {
     font-size: 2.5rem;
 }
+.iconos {
+    font-size: 4.5rem;
+    margin: 20px;
+    color: #111;
+}
 
 /* Section Hero */
 
 .hero {
     min-height: 450px;
     text-align: center;
+}
+.hero-inferior {
+    padding-bottom: 5em;
+    border-bottom: 1px solid #615151bb;
+    margin-bottom: 5em;
 }
 .hero-inferior-imagen.img-fluid {
     max-width: 100px;
@@ -75,6 +85,9 @@ h1 {
 .hero-content {
     padding: 2rem;
 }
+main section:last-child {
+    border-bottom: 1px solid black;
+}
 .hero-content h2 {
     font-size: 2.5rem;
 }
@@ -83,16 +96,84 @@ h1 {
     font-style: italic;
     color: #7c6666c9;
 }
-.hero-content i {
-    font-size: 3.5rem;
-    margin: 20px;
-    color: #111;
-}
 .hero-content p {
     max-width: 1000px;
     font-size: 1.1rem;
     padding: 10px;
 }
+
+/* FOOTER */
+
+.pie {
+    margin: auto;
+    /* margin */
+    padding: 30px 0;
+    max-width: 800px;
+}
+.footer-contact {
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+}
+.footer-contact:hover {
+    color: #111;
+}
+.footer-contact::after {
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+.footer-contact:hover::after {
+    color: #111;
+    width: 85%;
+}
+.iconos-redes-sociales {
+    align-items: center;
+    justify-content: center;
+}
+.social-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #111;
+    transition: all 0.2s ease-in;
+}
+.social-contact i {
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.social-contact:hover {
+    background-color: black;
+    border: 2px solid rgb(13,110,253);
+}
+.social-contact:hover i {
+    color: white;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ---- */
 
 
 #profile {
@@ -107,7 +188,7 @@ h1 {
         display: none;
     }
     .hero-inferior-imagen.img-fluid {
-        min-width: 20px;
+        min-width: 80px;
     }
 }
 /* 

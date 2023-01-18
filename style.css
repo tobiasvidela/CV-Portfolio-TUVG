@@ -32,6 +32,17 @@ section {
 h1 {
     font-size: 2.5rem;
 }
+.texto-cursiva {
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #aeaeae;
+}
+.seccion-titulo {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 5rem 0;
+}
 .iconos {
     font-size: 4.5rem;
     margin: 20px;
@@ -229,57 +240,43 @@ h1 {
 }
 
 
-/* -- PROJECTS -- */
 
-.experiencia-projects {
-    display: grid;
-    place-items: center;
-    margin: 100px 0;
+/* -- TRAJECTORY -- */
+.experiencia-trajectory {
     padding: 40px 40px 60px 40px;
 }
-.experiencia-titulo {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.badges-contenedor {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-.experiencia-image {
-    width: 2.5rem;
-    margin: 8px;
-    padding: 0;
-}
-.badges-contenedor {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #111;
-    font-size: 2rem;
-}
-.badges-contenedor i {
-    margin: 5px;
-}
-.experiencia-projects .columna .wip{
-    display: none;
-    transition: all 0.3 ease-in;
-}
-.experiencia-projects .columna {
+.experiencia-trajectory .columna {
     padding: 20px;
+    border: 2px solid #8080804d;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     transition: all 0.2s ease-in;
 }
-.experiencia-projects .columna:hover {
-    background-color: #dfdfdf;
+.experiencia-trajectory i {
+    font-size: 2.5rem;
+    padding: 8px 19px;
 }
-.experiencia-projects .columna:hover .wip{
-    color: #8f8f8f;
-    display: block;
+.trajectory-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.aptitudes.badge {
+    margin: 5px;
+}
+.experiencia-trajectory .columna:hover {
+    background-color: #111;
+    color: #dfdfdf;
+}
+.experiencia-trajectory .columna:hover i {
+    color: #dfdfdf;
 }
 
 

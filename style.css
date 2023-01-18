@@ -231,8 +231,56 @@ h1 {
 
 /* -- PROJECTS -- */
 
-
-
+.experiencia-projects {
+    display: grid;
+    place-items: center;
+    margin: 100px 0;
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.experiencia-image {
+    width: 2.5rem;
+    margin: 8px;
+    padding: 0;
+}
+.badges-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #111;
+    font-size: 2rem;
+}
+.badges-contenedor i {
+    margin: 5px;
+}
+.experiencia-projects .columna .wip{
+    display: none;
+    transition: all 0.3 ease-in;
+}
+.experiencia-projects .columna {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia-projects .columna:hover {
+    background-color: #dfdfdf;
+}
+.experiencia-projects .columna:hover .wip{
+    color: #8f8f8f;
+    display: block;
+}
 
 
 

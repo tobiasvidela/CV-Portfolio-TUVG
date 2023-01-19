@@ -48,6 +48,13 @@ h1 {
     margin: 20px;
     color: #111;
 }
+.boton-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
+
 
 /* Section Hero */
 
@@ -309,8 +316,9 @@ h1 {
     position: relative;
 }
 .overlay p {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
+    color: #111;
     margin-bottom: 0;
 }
 .project:hover img {
@@ -321,21 +329,29 @@ h1 {
 }
 .overlay .iconos-contenedor {
     display: flex;
-}
-.project-title {
-    color: #111;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 .overlay i {
     color: #111;
-    font-size: 54px;
+    font-size: 45px;
     margin: 12px;
 }
 
 
 
 
+
 /* RESPONSIVE */
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 16px;
+    }
+    .overlay i {
+        font-size: 32px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     #profile {
         display: none;

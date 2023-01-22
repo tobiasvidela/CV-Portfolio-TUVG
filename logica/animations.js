@@ -1,5 +1,5 @@
 // ANIMAR COMPUTADORA
-const skills = document.querySelector('.s-icons') //debo usarlo para arreglar errores
+const skills = document.querySelector('.s-icons') //obtener elemento
 
 function frames () { //animar elementos
     const animation = skills.animate([
@@ -25,3 +25,57 @@ setInterval(()=>{ //repetir
 },2000)
 
 // ANIMAR ICONOS DE TITULO
+const iconos = document.querySelectorAll('.iconos')
+
+function frames2 () { //animar iconos
+    const animate = iconos[0].animate([
+        {transform: 'TranslateX(-3%)'},
+        {transform: 'Rotate(.05turn)'},
+        {transform: 'TranslateX(3%)'},
+        {transform: 'Rotate(-.1turn)'},
+        {transform: 'TranslateX(-1%)'},
+        {transform: 'Rotate(.1turn)'},
+        {transform: 'TranslateX(1%)'},
+        {transform: 'Rotate(-.05turn)'},
+        {transform: 'TranslateX(-3%)'},
+        {transform: 'Rotate(.05turn)'},
+    ],{
+        easing: 'Linear',
+        iterations: 1,
+        duration: 700,
+    })
+    return animate.finished
+}
+function sacudirX () {
+    frames2()
+    .then(()=>{
+        const animate = iconos[1].animate([
+            {transform: 'TranslateX(-3%)'},
+            {transform: 'Rotate(.05turn)'},
+            {transform: 'TranslateX(3%)'},
+            {transform: 'Rotate(-.1turn)'},
+            {transform: 'TranslateX(-1%)'},
+            {transform: 'Rotate(.1turn)'},
+            {transform: 'TranslateX(1%)'},
+            {transform: 'Rotate(-.05turn)'},
+            {transform: 'TranslateX(-3%)'},
+            {transform: 'Rotate(.05turn)'},
+            {transform: 'TranslateX(3%)'},
+            {transform: 'Rotate(-.05turn)'},
+        ],{
+            easing: 'Linear',
+            iterations: 1,
+            duration: 900
+        })
+        return animate.finished
+    })
+}
+setInterval(() => {
+    sacudirX()
+}, 7500);
+
+// ANIMAR GUSTOS
+// ANIMAR FOTO DE PERFIL
+// ANIMAR SLIDER
+// ANIMAR ICONOS DE CONTACTO
+// ANIMAR TRAJECTORY

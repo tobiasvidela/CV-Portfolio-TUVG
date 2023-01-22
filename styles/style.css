@@ -100,18 +100,27 @@ h1 {
     top: 50%;
     transform: translate(-50%,-50%);
 }
-
+/*.sub-hero*/
 .sub-hero-content-imagen.img-fluid {
     max-width: 100px;
-    margin: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.sub-hero-content-imagen.img-fluid:hover {
+    transform: scale(1.1);
 }
 .sub-hero {
     min-height: 350px;
     text-align: center;
     margin-bottom: 200px;
 }
+.hobbies {
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
 .sub-hero-inferior {
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 .final-hero {
     min-height: 400px;

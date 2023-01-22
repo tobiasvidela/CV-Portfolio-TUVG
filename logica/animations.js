@@ -1,3 +1,4 @@
+"use strict";
 // ANIMAR COMPUTADORA
 const skills = document.querySelector('.s-icons') //obtener elemento
 
@@ -14,14 +15,14 @@ function frames () { //animar elementos
     })
     return animation.finished
 }
-function desplazarY () { //desplazar primer elemento al final
+function desplazarX () { //desplazar primer elemento al final
     frames()
     .then(()=>{
         skills.appendChild(skills.querySelectorAll('.s-icons > img')[0]) //arregla los errores al hacerlo con skills.firstChild
     })
 }
 setInterval(()=>{ //repetir
-    desplazarY()
+    desplazarX()
 },2000)
 
 // ANIMAR ICONOS DE TITULO
@@ -49,33 +50,82 @@ function frames2 () { //animar iconos
 function sacudirX () {
     frames2()
     .then(()=>{
-        const animate = iconos[1].animate([
-            {transform: 'TranslateX(-3%)'},
-            {transform: 'Rotate(.05turn)'},
-            {transform: 'TranslateX(3%)'},
-            {transform: 'Rotate(-.1turn)'},
-            {transform: 'TranslateX(-1%)'},
-            {transform: 'Rotate(.1turn)'},
-            {transform: 'TranslateX(1%)'},
-            {transform: 'Rotate(-.05turn)'},
-            {transform: 'TranslateX(-3%)'},
-            {transform: 'Rotate(.05turn)'},
-            {transform: 'TranslateX(3%)'},
-            {transform: 'Rotate(-.05turn)'},
-        ],{
-            easing: 'Linear',
-            iterations: 1,
-            duration: 900
-        })
-        return animate.finished
+        // console.log(iconos[0])
     })
 }
-setInterval(() => {
+iconos[0].addEventListener('mouseover',()=>{
     sacudirX()
-}, 7500);
+})
+iconos[1].addEventListener('mouseover',()=>{
+    iconos[1].animate([
+        {transform: 'TranslateX(-3%)'},
+        {transform: 'Rotate(.05turn)'},
+        {transform: 'TranslateX(3%)'},
+        {transform: 'Rotate(-.1turn)'},
+        {transform: 'TranslateX(-1%)'},
+        {transform: 'Rotate(.1turn)'},
+        {transform: 'TranslateX(1%)'},
+        {transform: 'Rotate(-.05turn)'},
+        {transform: 'TranslateX(-3%)'},
+        {transform: 'Rotate(.05turn)'},
+        {transform: 'scale(1)'},
+        {transform: 'scale(1.2)'},
+        {transform: 'scale(1)'},
+        {transform: 'scale(1)'},
+        {transform: 'scale(1)'},
+        {transform: 'scale(1.2)'},
+        {transform: 'scale(1)'},
+    ],{
+        easing: 'Linear',
+        iterations: 1,
+        duration: 2000
+    })
+})
+iconos[2].addEventListener('mouseover',()=>{
+    iconos[2].animate([
+        {transform: 'rotateX(45deg)'},
+        {transform: 'rotateY(-45deg)'},
+        {transform: 'rotateX(-45deg)'},
+        {transform: 'rotateX(0deg)'},
+        {transform: 'rotateY(0deg)'},
+    ],{
+        easing: 'linear',
+        iterations: 1,
+        duration: 3000,
+    })
+})
 
 // ANIMAR GUSTOS
+const hobbies = document.querySelector('.hobbies')
+
+function frames3 () {
+    const mover = hobbies.animate([
+        {transform: 'translateY(0px)', opacity: '1'},
+        {opacity: '.85'},
+        {transform: 'translateY(-100px)', opacity: '1'},
+    ],{
+        easing: 'linear',
+        iterations: 1,
+        duration: 700,
+    })
+    return mover.finished
+}
+function desplazarY () {
+    frames3()
+    .then(()=>{
+        hobbies.appendChild(hobbies.querySelectorAll('.hobbies > img')[0])
+    })
+}
+let animarHobbies = setInterval(() => {
+    desplazarY()
+}, 4000)
+hobbies.addEventListener('click',()=>{
+    desplazarY()
+    clearInterval(animarHobbies)
+})
+//cambiar por promises para cuando (pasado un tiempo de hacer click) se reinicie la animación automática
+
 // ANIMAR FOTO DE PERFIL
 // ANIMAR SLIDER
 // ANIMAR ICONOS DE CONTACTO
-// ANIMAR TRAJECTORY
+// ANIMAR TRAJECTOR

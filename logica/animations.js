@@ -25,6 +25,7 @@ setInterval(()=>{ //repetir
     desplazarX()
 },2000)
 
+
 // ANIMAR ICONOS DE TITULO
 const iconos = document.querySelectorAll('.iconos')
 
@@ -54,7 +55,7 @@ function sacudirX () {
     })
 }
 iconos[0].addEventListener('mouseover',()=>{
-    sacudirX()
+    requestAnimationFrame(sacudirX)
 })
 iconos[1].addEventListener('mouseover',()=>{
     iconos[1].animate([
@@ -126,6 +127,7 @@ hobbies.addEventListener('click',()=>{
 //cambiar por promises para cuando (pasado un tiempo de hacer click) se reinicie la animación automática
 
 // ANIMAR FOTO DE PERFIL
+
 // ANIMAR SLIDER
 // ANIMAR ICONOS DE CONTACTO
 // ANIMAR TRAJECTOR

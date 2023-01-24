@@ -47,7 +47,12 @@ columna.forEach(item =>{
             }, 400); //400 milisegundos para que la animación sea fluida y se puedan detectar bien los dobleclicks
         } else { //si hay muchos clicksseguidos 
             clearTimeout(timer)
-            alert('Please, be more gentle.')
+            swal({
+                title: 'STOP!',
+                text: 'Please, be more gentle.\nDon\'t treat this page like that.',
+                icon: 'warning',
+                button: false,
+            })
             clicks = 0
         }
     })

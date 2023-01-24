@@ -53,10 +53,10 @@ function sacudirX () {
         // console.log(iconos[0])
     })
 }
-iconos[0].addEventListener('mouseover',()=>{
+iconos[0].addEventListener('mouseover',()=>{ //question mark
     requestAnimationFrame(sacudirX)
 })
-iconos[1].addEventListener('mouseover',()=>{
+iconos[1].addEventListener('mouseover',()=>{ //heart
     iconos[1].animate([
         {transform: 'TranslateX(-3%)'},
         {transform: 'Rotate(.05turn)'},
@@ -81,17 +81,20 @@ iconos[1].addEventListener('mouseover',()=>{
         duration: 2000
     })
 })
-iconos[2].addEventListener('mouseover',()=>{
+iconos[2].addEventListener('mouseover',()=>{ //myself
     iconos[2].animate([
-        {transform: 'rotateX(45deg)'},
-        {transform: 'rotateY(-45deg)'},
-        {transform: 'rotateX(-45deg)'},
-        {transform: 'rotateX(0deg)'},
-        {transform: 'rotateY(0deg)'},
+        //Voltear
+        {transform: 'rotateY(0)', opacity: '1'},
+        {transform: 'rotateY(45deg)'},
+        {transform: 'rotateY(90deg)'},
+        {transform: 'rotateY(0)', opacity: '0'},
+        //Girar
+        {transform: 'rotateZ(180deg)', opacity: '0'},
+        {opacity: '1'},
     ],{
-        easing: 'linear',
+        easing: 'ease',
         iterations: 1,
-        duration: 3000,
+        duration: 1500,
     })
 })
 

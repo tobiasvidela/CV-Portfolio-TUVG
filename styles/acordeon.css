@@ -14,3 +14,19 @@ colocar height:0 para .badges-contenedor también*/
 .descripcion-trayectoria {
     height: 0;
 }
+/*SweetAlert*/
+
+.swal-overlay {
+    background-color: rgba(165, 43, 43, 0.3);
+}
+.swal-title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.swal-text {
+    text-align: center;
+    font-weight: bold;
+}
+.swal-footer {
+    text-align: center;
+}

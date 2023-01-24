@@ -36,7 +36,6 @@
 .project:hover img {
     opacity: 0.3;
     scale: 1.23;
-    
 }
 .project:hover .overlay {
     opacity: 1;

@@ -196,5 +196,3 @@ setInterval(() => { //repetir
     moverDer()
 }, 15000);
 
-// ANIMAR ICONOS DE CONTACTO
-// ANIMAR TRAJECTOR

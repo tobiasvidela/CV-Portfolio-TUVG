@@ -20,6 +20,7 @@
 #profile {
     width: 200px;
     height: 200px;
+    filter: drop-shadow(0 25px 10px rgba(0,0,0,0.5));
 }
 
 /* Estilos Generales */
@@ -135,6 +136,12 @@ h1 {
     text-align: center;
 }
 
+@media screen and (max-width: 837px) {
+    #profile {
+        height: 132.5px;
+        width: 132.5px;
+    }
+}
 @media screen and (max-width: 767px) {
     #profile {
         display: none;

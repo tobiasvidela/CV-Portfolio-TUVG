@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 // ANIMAR COMPUTADORA
 const skills = document.querySelector('.s-icons') //obtener elemento
 

@@ -1,0 +1,81 @@
+
+/* -- PROJECTS -- */
+.recent-projects {
+    padding: 40px;
+}
+.recent-projects img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.projects-container {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.project {
+    position: relative;
+}
+.overlay p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 0;
+}
+.project:hover img {
+    opacity: 0.3;
+    scale: 1.23;
+    
+}
+.project:hover .overlay {
+    opacity: 1;
+}
+.overlay .iconos-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay i {
+    color: #111;
+    font-size: 45px;
+    margin: 12px;
+}
+.proyectosGH:hover,
+.proyectos:hover {
+    cursor: pointer;
+}
+
+/* - Sweet Alert - */
+
+.swal-overlay {
+    background-color: rgba(255,255,255,.5);
+}
+.swal-text {
+    text-align: center;
+    font-weight: bold;
+}
+.swal-modal {
+    background-color: rgb(178, 201, 243);
+}
+
+/* - Media Queries - */
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 16px;
+    }
+    .overlay i {
+        font-size: 32px;
+    }
+}

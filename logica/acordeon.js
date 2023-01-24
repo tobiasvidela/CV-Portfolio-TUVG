@@ -52,6 +52,7 @@ columna.forEach(item =>{
                 text: 'Please, be more gentle.\nDon\'t treat this page like that.',
                 icon: 'warning',
                 button: false,
+                timer: 3200,
             })
             clicks = 0
         }

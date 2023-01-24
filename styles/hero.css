@@ -1,0 +1,119 @@
+
+/* - Section Hero - */
+
+.hero {
+    min-height: 450px;
+    text-align: center;
+}
+.hero-inferior {
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+}
+.skills {
+    position: relative;
+    margin: 200px 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.overlay-skills {
+    width: 80px;
+    padding: 5px;
+    border: 2px solid #323232;
+    border-radius: 10% 10% 35% 35%; /*capaz lo cambie, pero se ve bonito*/
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%,-52%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.overlay-skills ul{
+    list-style-type: none;
+}
+.skill-icons {
+    width: 90px;
+    padding: 5px;
+}
+.hero-inferior-imagen.img-fluid {
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* - Sub-hero - */
+
+.sub-hero-content-imagen.img-fluid {
+    max-width: 100px;
+    padding: 5px;
+    cursor: pointer;
+}
+.sub-hero-content-imagen.img-fluid:hover {
+    transform: scale(1.1);
+}
+.sub-hero {
+    min-height: 350px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.hobbies {
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.sub-hero-inferior {
+    overflow: hidden;
+}
+.final-hero {
+    min-height: 400px;
+    text-align: center;
+}
+.hero-principal {
+    padding: 3rem;
+}
+.hero-principal h1 {
+    font-size: 3.5rem;
+}
+.hero-principal h3 {
+    font-size: 1.5rem;
+    color: #615151;
+    max-width: 915px;
+}
+.hero-principal i {
+    font-size: 7rem;
+    margin: 20px;
+    color: black;
+}
+.hero-content {
+    padding: 2rem;
+}
+.hero-content h2 {
+    font-size: 2.5rem;
+}
+.hero-content h4 {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #7c6666c9;
+}
+.hero-content p {
+    max-width: 1000px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.container .col {
+    max-width: 360px;
+}
+
+@media screen and (max-width: 330px) {
+    .overlay-skills {
+        display: none;
+    }
+}
+@media screen and (min-width:700px){
+    .skills {
+        max-width: 600px;
+    }
+}

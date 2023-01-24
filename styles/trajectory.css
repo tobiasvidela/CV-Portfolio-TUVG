@@ -1,0 +1,39 @@
+
+/* -- TRAJECTORY -- */
+.experiencia-trajectory {
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-trajectory .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia-trajectory i {
+    font-size: 2.5rem;
+    padding: 8px 19px;
+}
+.trajectory-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.aptitudes.badge {
+    margin: 5px;
+    padding: 5px 9px 3px 9px;
+}
+.experiencia-trajectory .columna:hover {
+    background-color: #111;
+    color: #dfdfdf;
+}
+.experiencia-trajectory .columna:hover i {
+    color: #dfdfdf;
+}

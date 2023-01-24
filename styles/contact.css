@@ -1,0 +1,52 @@
+/* -- CONTACT -- */
+
+.seccion-contacto {
+    color: #393939;
+    height: 600px;
+    padding: 10px;
+}
+.seccion-contacto-cards {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box {
+    border: 3px solid #393939;
+    border-radius: 7px;
+    margin: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(
+        45deg, #393939 50%,  transparent 50%
+    );
+    background-position: 100%;
+    background-size: 250%;
+    transition: 0.5s background;
+}
+.contact-box:hover {
+    background-position: 0;
+    color: #dfdfdf;
+}
+.contact-box:hover a {
+    color: #dfdfdf;
+}
+.contact {
+    padding: 10px;
+    font-size: 2rem;
+    color: #111;
+    text-decoration: none;
+}
+/* - SweetAlert - */
+.swal-text {
+    text-align: center;
+    color: #393939;
+    font-size: 20px;
+    font-weight: bold;
+}
+.swal-modal {
+    background-color: #dfdfdf;
+}
+.swal-overlay {
+    background-color: rgba(39,39,39,0.5);
+}

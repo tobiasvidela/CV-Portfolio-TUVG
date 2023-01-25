@@ -32,6 +32,9 @@
 .overlay-skills ul{
     list-style-type: none;
 }
+.skillIcons {
+    display: flex;
+}
 .skill-icons {
     width: 90px;
     padding: 5px;
@@ -99,7 +102,7 @@
     color: #7c6666c9;
 }
 .hero-content p {
-    max-width: 1000px;
+    max-width: 600px;
     font-size: 1.1rem;
     padding: 10px;
 }

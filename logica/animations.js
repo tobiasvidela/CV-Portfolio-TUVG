@@ -1,6 +1,6 @@
 'use strict'
 // ANIMAR COMPUTADORA
-const skills = document.querySelector('.s-icons') //obtener elemento
+const skillIcons = document.querySelector('.skillIcons') //obtener elemento
 
 function trasladarX (elementos) { //animación para desplazar horizontalmente
     const animation = elementos.animate([
@@ -16,15 +16,28 @@ function trasladarX (elementos) { //animación para desplazar horizontalmente
     })
     return animation.finished
 }
-function intercambiar () {
-    trasladarX(skills) //ejecutar la animación
-    .then(()=>{ //luego
-        //ubicar el primer elemento y posicionarlo al último
-        skills.appendChild(skills.querySelectorAll('.s-icons > img')[0])
-    })
+function intercambiar (elemento,direccion = null) { //intercambiar imagenes dentro de un elemento contenedor
+    if (typeof direccion != 'string') return console.error('direction must be a string value')
+    // tranformar dirección a minúscula
+    let sentido = direccion.toLowerCase()
+    //ejecutar la animación
+    if (sentido == 'x') { //para sentido horizontal
+        trasladarX(elemento)
+        .then(()=>{ //luego de la animación
+            //posicionar al último la primera imagen del elemento
+            elemento.appendChild(elemento.querySelectorAll(`.${elemento.className} > img`)[0])
+        })
+    } else if (sentido == 'y') { //para sentido vertical
+        trasladarY(elemento)
+        .then(()=>{
+            elemento.appendChild(elemento.querySelectorAll(`.${elemento.className} > img`)[0])
+        })
+    } else {
+        console.error('any direction is selected') //ninguna dirección fue pasada como parámetro
+    }
 }
 setInterval(()=>{ //repetir
-    intercambiar()
+    intercambiar(skillIcons,'x')
 },1900)// 1 segundo más que la animación (espera un segundo antes de repetir la animación)
 
 // ANIMAR ICONOS DE TITULO
@@ -105,8 +118,8 @@ iconos[2].addEventListener('mouseover',()=>{ //fa-user-tie
 // ANIMAR HOBBIES Y GUSTOS
 const hobbies = document.querySelector('.hobbies')
 
-function trasladarY () { // animación para desplazar verticalmente
-    const mover = hobbies.animate([
+function trasladarY (elementos) { // animación para desplazar verticalmente
+    const animation = elementos.animate([
         {transform: 'translateY(0px)', opacity: '1'},
         {opacity: '.85'},
         {transform: 'translateY(-100px)', opacity: '1'},
@@ -115,24 +128,18 @@ function trasladarY () { // animación para desplazar verticalmente
         iterations: 1,
         duration: 700,
     })
-    return mover.finished
-}
-function desplazarY () {
-    trasladarY()
-    .then(()=>{
-        hobbies.appendChild(hobbies.querySelectorAll('.hobbies > img')[0])
-    })
+    return animation.finished
 }
 let animarHobbies = setInterval(() => {
-    desplazarY()
+    intercambiar(hobbies,'y')
 }, 4000)
 hobbies.addEventListener('click',()=>{
-    desplazarY()
+    intercambiar(hobbies,'y')
     clearInterval(animarHobbies)
 })
 //cambiar por promises para cuando (pasado un tiempo de hacer click) se reinicie la animación automática
 
-/* ANIMAR FOTO DE PERFIL //descartado temporalmente
+/* ANIMAR FOTO DE PERFIL //descartado a medio hacer por tiempo indefinido
 const profile = document.querySelector('#profile')
 function profileFrames () {
     const floatingImg = profile.animate([

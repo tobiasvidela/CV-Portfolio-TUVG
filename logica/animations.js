@@ -137,38 +137,6 @@ hobbies.addEventListener('click',()=>{
     intercambiar(hobbies,'y')
     clearInterval(animarHobbies)
 })
-//cambiar por promises para cuando (pasado un tiempo de hacer click) se reinicie la animación automática
-
-/* ANIMAR FOTO DE PERFIL //descartado a medio hacer por tiempo indefinido
-const profile = document.querySelector('#profile')
-function profileFrames () {
-    const floatingImg = profile.animate([
-        {transform: 'translateY(0px)'},
-        {transform: 'translateY(-5px)'},
-        {transform: 'translateY(-10px)'},
-        // {transform: 'translateY(-15px)'},
-        // {transform: 'translateY(-20px)'},
-        // {transform: 'translateY(-15px)'},
-        // {transform: 'translateY(-10px)'},
-        {transform: 'translateY(-5px)'},
-        {transform: 'translateY(0px)'},
-        // {transform: 'translateY(5px)'},
-        // {transform: 'translateY(10px)'},
-        // {transform: 'translateY(15px)'},
-        // {transform: 'translateY(20px)'},
-        // {transform: 'translateY(15px)'},
-        // {transform: 'translateY(10px)'},
-        // {transform: 'translateY(5px)'},
-        // {transform: 'translateY(0px)'},
-    ],{
-        easing: 'ease-in-out',
-        iterations: Infinity,
-        duration: 2000,
-        direction: 'alternate',
-    })
-    return floatingImg.finished
-}
-requestAnimationFrame(profileFrames)*/
 
 // ANIMAR SLIDER
 const slider = document.querySelector('#slider'),
@@ -206,7 +174,7 @@ btnDer.addEventListener('click',()=>{
 btnIzq.addEventListener('click',()=>{
     moverIzq()
 })
-setInterval(() => { //repetir
+setInterval(() => { //repetir slider
     moverDer()
 }, 15000);
 

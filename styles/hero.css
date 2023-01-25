@@ -114,6 +114,14 @@
 .container .col {
     max-width: 360px;
 }
+#projectsLink i { /*porque no me dejaba añadr margen de otra manera*/
+    font-size: 3rem;
+    color: #111;
+    margin-top: 30px;
+}
+#projectsLink:hover i {
+    color: #393939;
+}
 
 @media screen and (max-width: 330px) {
     .overlay-skills {

@@ -40,8 +40,7 @@ h1 {
 p a {
     text-decoration: none;
     color: #111;
-    margin: 7px;
-    font-size: 1.2em;
+    font-size: 2.25rem;
 }
 p a:hover {
     color: #393939;
@@ -56,11 +55,6 @@ p a:hover {
     text-align: center;
     font-size: 3.2rem;
     margin: 5rem 0;
-}
-.iconos {
-    font-size: 4.5rem;
-    margin: 20px;
-    color: #111;
 }
 .boton-info {
     font-size: 1.1rem;

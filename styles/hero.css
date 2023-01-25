@@ -93,6 +93,11 @@
 .hero-content {
     padding: 2rem;
 }
+.iconos {
+    font-size: 4.5rem;
+    margin: 20px;
+    color: #111;
+}
 .hero-content h2 {
     font-size: 2.5rem;
 }

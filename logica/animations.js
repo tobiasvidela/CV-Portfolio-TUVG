@@ -2,34 +2,37 @@
 // ANIMAR COMPUTADORA
 const skills = document.querySelector('.s-icons') //obtener elemento
 
-function frames () { //animar elementos
-    const animation = skills.animate([
-        //keyframes
+function trasladarX (elementos) { //animación para desplazar horizontalmente
+    const animation = elementos.animate([
+        //inicio
         {transform: 'TranslateX(0px)'},
-        {transform: `TranslateX(-65px)`} //dejaré para más tarde hacer que pueda variar junto con el tamaño de cada imagen para que pueda ser responsive
+        {transform: `TranslateX(-66px)`}
+        //fin
     ],{
-        //opciones
-        easing: 'Linear',
+        //opciones de animación
+        easing: 'ease-in-out',
         iterations: 1,
-        duration: 1000
+        duration: 900
     })
     return animation.finished
 }
-function desplazarX () { //desplazar primer elemento al final
-    frames()
-    .then(()=>{
-        skills.appendChild(skills.querySelectorAll('.s-icons > img')[0]) //arregla los errores al hacerlo con skills.firstChild
+function intercambiar () {
+    trasladarX(skills) //ejecutar la animación
+    .then(()=>{ //luego
+        //ubicar el primer elemento y posicionarlo al último
+        skills.appendChild(skills.querySelectorAll('.s-icons > img')[0])
     })
 }
 setInterval(()=>{ //repetir
-    desplazarX()
-},2000)
+    intercambiar()
+},1900)// 1 segundo más que la animación (espera un segundo antes de repetir la animación)
 
 // ANIMAR ICONOS DE TITULO
-const iconos = document.querySelectorAll('.iconos')
+const iconos = document.querySelectorAll('.iconos') //obtener íconos (hero)
 
-function frames2 () { //animar iconos
-    const animate = iconos[0].animate([
+// animaciones de iconos:
+function sacudir (icon) { // animación de sacudida
+    const sacudida = icon.animate([
         {transform: 'TranslateX(-3%)'},
         {transform: 'Rotate(.05turn)'},
         {transform: 'TranslateX(3%)'},
@@ -40,24 +43,16 @@ function frames2 () { //animar iconos
         {transform: 'Rotate(-.05turn)'},
         {transform: 'TranslateX(-3%)'},
         {transform: 'Rotate(.05turn)'},
+        {transform: 'Rotate(0turn)'},
     ],{
-        easing: 'Linear',
+        easing: 'ease-out',
         iterations: 1,
         duration: 700,
     })
-    return animate.finished
+    return sacudida.finished
 }
-function sacudirX () {
-    frames2()
-    .then(()=>{
-        // console.log(iconos[0])
-    })
-}
-iconos[0].addEventListener('mouseover',()=>{ //question mark
-    requestAnimationFrame(sacudirX)
-})
-iconos[1].addEventListener('mouseover',()=>{ //heart
-    iconos[1].animate([
+function sacudirYLatido (icon) { // animación de sacudir y latido
+    const shakeAndBeat = icon.animate([
         {transform: 'TranslateX(-3%)'},
         {transform: 'Rotate(.05turn)'},
         {transform: 'TranslateX(3%)'},
@@ -72,17 +67,15 @@ iconos[1].addEventListener('mouseover',()=>{ //heart
         {transform: 'scale(1.2)'},
         {transform: 'scale(1)'},
         {transform: 'scale(1)'},
-        {transform: 'scale(1)'},
-        {transform: 'scale(1.2)'},
-        {transform: 'scale(1)'},
     ],{
-        easing: 'Linear',
+        easing: 'ease',
         iterations: 1,
-        duration: 2000
+        duration: 1500
     })
-})
-iconos[2].addEventListener('mouseover',()=>{ //myself
-    iconos[2].animate([
+    return shakeAndBeat.finished
+}
+function girarYVoltear (icon) { // animación de girar y voltear
+    const turnAndFlip = icon.animate([
         //Voltear
         {transform: 'rotateY(0)', opacity: '1'},
         {transform: 'rotateY(45deg)'},
@@ -96,12 +89,23 @@ iconos[2].addEventListener('mouseover',()=>{ //myself
         iterations: 1,
         duration: 1500,
     })
+    return turnAndFlip.finished
+}
+// asignar animaciones a los íconos
+iconos[0].addEventListener('mouseover',()=>{ //fa-circle-question
+    sacudir(iconos[0])
+})
+iconos[1].addEventListener('mouseover',()=>{ //fa-heart
+    sacudirYLatido(iconos[1])
+})
+iconos[2].addEventListener('mouseover',()=>{ //fa-user-tie
+    girarYVoltear(iconos[2])
 })
 
-// ANIMAR GUSTOS
+// ANIMAR HOBBIES Y GUSTOS
 const hobbies = document.querySelector('.hobbies')
 
-function frames3 () {
+function trasladarY () { // animación para desplazar verticalmente
     const mover = hobbies.animate([
         {transform: 'translateY(0px)', opacity: '1'},
         {opacity: '.85'},
@@ -114,7 +118,7 @@ function frames3 () {
     return mover.finished
 }
 function desplazarY () {
-    frames3()
+    trasladarY()
     .then(()=>{
         hobbies.appendChild(hobbies.querySelectorAll('.hobbies > img')[0])
     })

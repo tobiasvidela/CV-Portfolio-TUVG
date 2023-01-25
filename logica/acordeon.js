@@ -1,4 +1,4 @@
-'use strict'
+'use strict' // Modern JavaScript
 // ANIMAR TRAJECTORY
 const columna = document.querySelectorAll('.columna')
 let clicks = 0, timer = null //agregar esto y el demás código relacionado arregló bugs de display luego de animaciones

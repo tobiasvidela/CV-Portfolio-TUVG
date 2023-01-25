@@ -37,6 +37,15 @@ section {
 h1 {
     font-size: 2.5rem;
 }
+p a {
+    text-decoration: none;
+    color: #111;
+    margin: 7px;
+    font-size: 1.2em;
+}
+p a:hover {
+    color: #393939;
+}
 .texto-cursiva {
     font-size: 15px;
     font-weight: lighter;

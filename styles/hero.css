@@ -130,6 +130,7 @@
 .swal-title {
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 2em;
 }
 .swal-text {
     text-align: center;

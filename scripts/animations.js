@@ -198,10 +198,46 @@ function moveRight () { //slide to right
 };
 
 btnRight.addEventListener('click',()=>{
-    moveRight();
+    clicks++;
+    if (clicks === 1) {
+        moveRight(); //move, then prevent clicks
+        timer = setTimeout(() => {
+            clicks = 0;
+        }, 1100);
+    } else {
+        clearTimeout(timer);
+        swal({
+            title: 'Click Slowly!',
+            icon: 'warning',
+            button: false,
+            timer: 3000,
+        });
+        clicks = 0;
+    };
+    btnRight.addEventListener('dblclick', e => {
+        e.preventDefault();
+    });
 });
 btnLeft.addEventListener('click',()=>{
-    moveLeft();
+    clicks++;
+    if (clicks === 1) {
+        moveLeft(); //move, then prevent clicks
+        timer = setTimeout(() => {
+            clicks = 0;
+        }, 1100);
+    } else {
+        clearTimeout(timer);
+        swal({
+            title: 'Click Slowly!',
+            icon: 'warning',
+            button: false,
+            timer: 3000,
+        });
+        clicks = 0;
+    };
+    btnLeft.addEventListener('dblclick', e => {
+        e.preventDefault();
+    });
 });
 
 setInterval(() => { //repeat slider

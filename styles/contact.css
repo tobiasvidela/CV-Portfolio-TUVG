@@ -1,11 +1,11 @@
-/* -- CONTACT -- */
+/* - Contact - */
 
-.seccion-contacto {
+.contact-section {
     color: #393939;
     height: 600px;
     padding: 10px;
 }
-.seccion-contacto-cards {
+.contact-section-cards {
     display: flexbox;
     justify-content: center;
     align-items: center;

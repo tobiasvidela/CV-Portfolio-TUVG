@@ -1,0 +1,28 @@
+/* - Accordion - */
+
+.column {
+    cursor: pointer;
+}
+.badges-container,
+.trajectory-description {
+    margin: 0;
+    overflow: hidden;
+    transition: all .7s ease;
+}
+.trajectory-description {
+    height: 0;
+}
+
+/*SweetAlert*/
+
+.swal-overlay {
+    background-color: rgba(165, 43, 43, 0.3);
+}
+.swal-title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.swal-text {
+    text-align: center;
+    font-weight: bold;
+}

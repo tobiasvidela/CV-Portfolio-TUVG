@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tobías Videla G. | Mind972">
-    <meta name="description" content="Tobías Videla G. Portfolio/CV - Contact">
+    <meta name="author" content="Tobías Videla">
+    <meta name="description" content="Tobías Videla Portfolio/CV - Contact">
     <!-- TITLE -->
-    <title>Tobías Videla G. | Contact</title>
+    <title>Tobías Videla | Contact</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/584/584863.png" type="image/x-icon">
     <!-- CSS -->
@@ -31,13 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbar-toggler">
                     <ul class="navbar-nav d-flex justify-content-center align-items-center mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">About</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                            <a class="nav-link active" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <img class="img-fluid rounded-circle" id="profile" src="../images/profile.jpg" alt="Profile-CV-Portfolio_Image">
+                            <img class="img-fluid rounded-circle" id="profile" src="./images/profile.jpg" loading="lazy" alt="Profile-CV-Portfolio">
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./trajectory.html">Trajectory</a>
@@ -51,32 +51,34 @@
         </nav>
         <!-- DARKMODE | W.I.P. -->
     </header>
+    
     <main>
-        <section class="seccion-contacto">
-            <div class="seccion-contacto-cards">
+        <section class="contact-section">
+            <div class="contact-section-cards">
                 <div class="contact-box">
-                    <a class="contact"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a name="GitHub" class="contact"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
                 <div class="contact-box">
-                    <a class="contact"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a name="LinkedIn" class="contact"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 </div>
                 <div class="contact-box">
-                    <a class="contact"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a name="Instagram" class="contact"><i class="fa-brands fa-instagram"></i> Instagram</a>
                 </div>
                 <div class="contact-box">
-                    <a class="contact"><i class="fa-regular fa-envelope"></i> Mail</a>
+                    <a name="Mail" class="contact"><i class="fa-regular fa-envelope"></i> Mail</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="pie d-flex flex-column justify-content-center align-items-center">
-        <div class="derechos-de-autor">
+
+    <footer class="foot d-flex flex-column justify-content-center align-items-center">
+        <div class="author">
             Created by Tobías Videla G. (2023) &#169;
         </div>
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="../logica/contact.js"></script>
+    <script src="../scripts/redirection.js"></script>
     <!-- SWEET ALERT -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- BOOTSTRAP -->

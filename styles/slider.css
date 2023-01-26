@@ -1,4 +1,4 @@
-.contenedor-slider {
+.slider-container {
     width: 100%;
     margin: 0 auto 20px auto;
     overflow: hidden;
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .contenedor-slider {
+    .slider-container {
         display: none;
     }
 }

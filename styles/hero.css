@@ -1,5 +1,4 @@
-
-/* - Section Hero - */
+/* - Hero - */
 
 .hero {
     min-height: 450px;
@@ -93,7 +92,7 @@
 .hero-content {
     padding: 2rem;
 }
-.iconos {
+.hero-icons {
     font-size: 4.5rem;
     margin: 20px;
     color: #111;
@@ -122,6 +121,23 @@
 #projectsLink:hover i {
     color: #393939;
 }
+
+/* - SweetAlert - */
+
+.swal-overlay {
+    background-color: #dfdfdf4d;
+}
+.swal-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.swal-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* - Media Queries - */
 
 @media screen and (max-width: 330px) {
     .overlay-skills {

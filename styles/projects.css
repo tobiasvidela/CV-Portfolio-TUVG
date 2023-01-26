@@ -1,5 +1,5 @@
+/* - Projects - */
 
-/* -- PROJECTS -- */
 .recent-projects {
     padding: 40px;
 }
@@ -24,14 +24,14 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.project {
-    position: relative;
-}
 .overlay p {
     font-size: 30px;
     font-weight: bold;
     color: #111;
     margin-bottom: 0;
+}
+.project {
+    position: relative;
 }
 .project:hover img {
     opacity: 0.3;
@@ -40,7 +40,7 @@
 .project:hover .overlay {
     opacity: 1;
 }
-.overlay .iconos-contenedor {
+.overlay .icons-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,8 +50,8 @@
     font-size: 45px;
     margin: 12px;
 }
-.proyectosGH:hover,
-.proyectos:hover {
+.projectGH:hover,
+.projectWeb:hover {
     cursor: pointer;
 }
 

@@ -2,7 +2,6 @@
 //  - Redirections -
 //Projects
 const icons = document.querySelectorAll('.project-modal-footer > a'); //select each anchor in the container
-console.log(icons)
 
 icons.forEach(icon => {
     if (icon.className == 'projectGH') {
@@ -40,7 +39,7 @@ const contacts = document.querySelectorAll('.contact');
 contacts.forEach(contact => {
     contact.addEventListener('click',() => {
         swal({
-            text: `You're being redirected to ${contact.name}.\n\nSee you soon!`,
+            text: `You're being redirected to my ${contact.name}.\n\nSee you soon!`,
             buttons: false,
             timer: 3000,
         });

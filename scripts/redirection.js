@@ -1,7 +1,8 @@
 'use strict';
 //  - Redirections -
 //Projects
-const icons = document.querySelectorAll('.icons-container > a'); //select each anchor in the container
+const icons = document.querySelectorAll('.project-modal-footer > a'); //select each anchor in the container
+console.log(icons)
 
 icons.forEach(icon => {
     if (icon.className == 'projectGH') {

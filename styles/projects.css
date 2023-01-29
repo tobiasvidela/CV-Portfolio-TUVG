@@ -39,6 +39,36 @@
 .project-image:hover not .project-image:first-child {
     height: 0;
 }
+.project-modal {
+    background-color: #1111117f;
+}
+.project-modal .project-modal-header {
+    background: #111;
+}
+.project-modal .project-modal-header-img {
+    border-radius: 12px;
+    margin: 5px 0 10px 0;
+}
+.project-modal .project-modal-header-title {
+    color: #dfdfdf;
+    font-size: 1.75em !important;
+    font-weight: bold;
+}
+.project-modal .project-modal-body {
+    background: #111;
+    color: #dfdfdf;
+    border-bottom: none;
+}
+.project-modal .project-modal-footer {
+    font-size: 2em;
+    background: #111;
+    color: #dfdfdf;
+}
+.project-modal .project-modal-footer a {
+    color: #dfdfdf;
+    cursor: pointer;
+    padding: 0 1em;
+}
 
 
 /* - Sweet Alert - */
@@ -54,13 +84,20 @@
     background-color: rgb(178, 201, 243);
 }
 
+/* - Media Queries - */
+
 @media screen and (max-width:1200px) {
     .displayer {
-        max-width: 800px;
+        max-width: 700px;
     }
 }
 @media screen and (max-width:768px) {
     .project-image:hover {
         cursor: pointer;
-    } 
+    }
+}
+@media screen and (max-width:550px) {
+    .project-image {
+        max-width: calc(100vw - 100px);
+    }
 }

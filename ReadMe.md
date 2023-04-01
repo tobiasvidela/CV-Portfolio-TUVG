@@ -1,13 +1,5 @@
-# This is my portfolio 
+# PORTFOLIO
 
-#### (also CV/resume)
+In [this project](https://tobiasvidela.github.io/CV-Portfolio-TUVG/) you can read about me, my skills, what i like, who I am, and the technologies I use and know. Keep exploring the pages to see more information about my [learning trajectory](https://tobiasvidela.github.io/CV-Portfolio-TUVG/pages/trajectory.html), my [recent projects](https://tobiasvidela.github.io/CV-Portfolio-TUVG/pages/projects.html) and how to [contact me](https://tobiasvidela.github.io/CV-Portfolio-TUVG/pages/contact.html).
 
-I started this project in January (2023) because of AP4.0.
-
-I worked **several hours** and continued this project because _I love programming._
-
-## Para Argentina Programa 4.0 (Do not read if you're not from Argentina Programa or similar)
-
-Decidí poner todo en inglés para irme acostumbrando a escribir y leer código en inglés, pues mi propósito es llegar a trabajar internacionalmente. Iba poniendo un poco de inglés y otro de español, y antes de entregar consideré que no era buena práctica mezclar español e inglés, podría prestarse a confusiones, y la verdad no quedaba muy bonito. Además, considero que no es muy profesional mezclar idiomas, pues aparte de generar confusión, dificulta la mantenibilidad, legibilidad, y consistencia.
-
-Sin embargo, si desea que cambie los comentarios a español, lo hago. Gracias por leer esto antes de revisar mi proyecto final.
+Thanks for reading.

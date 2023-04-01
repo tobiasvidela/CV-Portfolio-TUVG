@@ -56,7 +56,7 @@ function getLink (name) { //obtain the correct link
             link = 'https://github.com/tobiasvidela';
             break;
         case 'LinkedIn':
-            link = 'https://www.linkedin.com/in/tob%C3%ADas-uriel-videla-guliotti-26b89b1ba/';
+            link = 'https://www.linkedin.com/in/tobiasvidelaug/';
             break;
         case 'Instagram':
             link = 'https://www.instagram.com/mind_972/';
